@@ -12,9 +12,11 @@ class CustomPopUpViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var bgBtn: UIButton!
     @IBOutlet weak var subscribeBtn: UIButton!
-    
+    @IBOutlet weak var openChatBtn: UIButton!
     
     var subscribeBtnCompletionClosure: (() -> Void)?
+    
+    var myPopUpDelegate : PopUpDelegate?
     
     
     override func viewDidLoad() {
@@ -24,9 +26,10 @@ class CustomPopUpViewController: UIViewController {
         
         contentView.layer.cornerRadius = 30
         subscribeBtn.layer.cornerRadius = 10
+        openChatBtn.layer.cornerRadius = 10
     }
     
-    
+    //MARK: = IBActions
     @IBAction func bgBtnClicked(_ sender: UIButton) {
         print("CustomPopUpViewControler - bgBtnCliked() called")
         self.dismiss(animated: true, completion: nil)
@@ -34,14 +37,23 @@ class CustomPopUpViewController: UIViewController {
     }
     @IBAction func onSubscribeBtnClicked(_ sender: UIButton) {
         print("CustomPopUpViewControler - onSubscribeBtnClicked() called")
-        
         self.dismiss(animated: true, completion: nil)
        
         //컴플레션 블럭 호출
         if let subscribeBtnCompletionClosure = subscribeBtnCompletionClosure{
-            //메인에 알린다.
-            subscribeBtnCompletionClosure()
+        //메인에 알린다.
+        subscribeBtnCompletionClosure()
         }
+    }
+    
+    @IBAction func onOpenChatBtnClicked(_ sender: UIButton) {
+        print("CustomPopUpViewControler - onOpenChatBtnClicked() called")
+        
+        //리모콘 버튼을 눌러서 여기서 발동이 되는 것임 - 수신하는 곳: View Controller
+        myPopUpDelegate?.onOpenChatBtnClicked()
+        
+        self.dismiss(animated: true, completion: nil)
         
     }
+    
 }

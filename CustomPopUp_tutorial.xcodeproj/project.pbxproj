@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5410B6FF2817A461007DFD7F /* PopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5410B6FE2817A461007DFD7F /* PopUpDelegate.swift */; };
 		54394DC92816A59500518EFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54394DC82816A59500518EFD /* AppDelegate.swift */; };
 		54394DCB2816A59500518EFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54394DCA2816A59500518EFD /* SceneDelegate.swift */; };
 		54394DCD2816A59500518EFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54394DCC2816A59500518EFD /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5410B6FE2817A461007DFD7F /* PopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpDelegate.swift; sourceTree = "<group>"; };
 		54394DC52816A59500518EFD /* CustomPopUp_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPopUp_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54394DC82816A59500518EFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54394DCA2816A59500518EFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				54394DD32816A59700518EFD /* LaunchScreen.storyboard */,
 				54394DD62816A59700518EFD /* Info.plist */,
 				54394DDE2816BAFC00518EFD /* CustomPopUpViewController.swift */,
+				5410B6FE2817A461007DFD7F /* PopUpDelegate.swift */,
 			);
 			path = CustomPopUp_tutorial;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5410B6FF2817A461007DFD7F /* PopUpDelegate.swift in Sources */,
 				54394DDF2816BAFC00518EFD /* CustomPopUpViewController.swift in Sources */,
 				54394DCD2816A59500518EFD /* ViewController.swift in Sources */,
 				54394DC92816A59500518EFD /* AppDelegate.swift in Sources */,
