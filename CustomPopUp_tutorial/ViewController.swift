@@ -8,16 +8,34 @@
 import UIKit
 import WebKit
 
+let notificationName = "btnClickNotification" //주파수의 이름
+
 class ViewController: UIViewController, PopUpDelegate {
     
 
     @IBOutlet weak var myWebView: WKWebView!
     @IBOutlet weak var createPopUpBtn: UIButton!
+    
+    // notification center - 메모리 할당 뒤 마지막에 반드시 메모리 해제
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //notification 이라는 방송 수신기를 장착한다.
+        NotificationCenter.default.addObserver(self, selector: #selector(loadWebView), name: NSNotification.Name(rawValue: notificationName), object: nil)
     }
 
+    @objc fileprivate func loadWebView(){
+        
+        print("ViewController - loadWebView() called")
+        let myBlogAddress = URL(string: "https://www.naver.com/")
+        self.myWebView.load(URLRequest(url: myBlogAddress!))
+        
+    }
 
     @IBAction func onCreatePopUpBtnClicked(_ sender: UIButton) {
         
