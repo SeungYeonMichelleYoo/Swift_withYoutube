@@ -1,0 +1,6 @@
+framework module Pods_Completion_Block_Tutorial {
+  umbrella header "Pods-Completion Block-Tutorial-umbrella.h"
+
+  export *
+  module * { export * }
+}
