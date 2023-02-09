@@ -63,12 +63,12 @@
 				54F070192993B714000820F3 /* AppDelegate.swift */,
 				54F0701B2993B714000820F3 /* SceneDelegate.swift */,
 				54F0701D2993B714000820F3 /* ViewController.swift */,
+				54F0702F2993B7E4000820F3 /* TableViewCell.swift */,
+				54F070302993B7E4000820F3 /* TableViewCell.xib */,
 				54F0701F2993B714000820F3 /* Main.storyboard */,
 				54F070222993B715000820F3 /* Assets.xcassets */,
 				54F070242993B715000820F3 /* LaunchScreen.storyboard */,
 				54F070272993B715000820F3 /* Info.plist */,
-				54F0702F2993B7E4000820F3 /* TableViewCell.swift */,
-				54F070302993B7E4000820F3 /* TableViewCell.xib */,
 			);
 			path = DynamicTableView;
 			sourceTree = "<group>";
