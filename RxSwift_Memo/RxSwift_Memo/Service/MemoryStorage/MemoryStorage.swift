@@ -10,8 +10,8 @@ import RxSwift
 
 //메모리에 메모를 저장
 class MemoryStorage: MemoStorageType {
-    private var list = [
-        Memo(content: "Hello, RxSwift", insertDate: Date().addingTimeInterval(-10)),
+    private var list = [ //메모를 저장할 배열
+        Memo(content: "Hello, RxSwift", insertDate: Date().addingTimeInterval(-10)), //더미데이터
         Memo(content: "Lorem ipsum", insertDate: Date().addingTimeInterval(-20))
     ]
     
